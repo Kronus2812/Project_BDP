@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #7b0c0c, #1e1e1e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  color: #ff4d4d;
+}
+
+.login-sub {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+input {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #aa2e2e;
+  border-radius: 8px;
+  background-color: #2b2b2b;
+  color: white;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: #c62828;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a91d1d;
+}
+
+.btn-retroceso {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #a91d1d, #ff4d4d); 
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-retroceso:hover {
+  background: linear-gradient(135deg, #ff4d4d, #7b0c0c);
+  transform: translateY(-2px);
+}
+
+

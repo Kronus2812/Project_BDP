@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;    
+}
+
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.video-background video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(19, 15, 15, 0.9);
+  padding: 15px 40px;
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 55px;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ff0000;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+main {
+  max-width: 700px;
+  margin: 50px auto 40px auto; 
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 16px;
+  color: white;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"],
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 6px;
+  font-size: 15px;
+  background-color: #fff;
+  color: #000;
+}
+
+select option.placeholder-option {
+  color: #888;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  main {
+    margin: 90px 20px 0 20px;
+    padding: 30px 20px;
+  }
+}

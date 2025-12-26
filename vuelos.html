@@ -1,0 +1,280 @@
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanLens - Registro de Turnos</title>
+  <link rel="stylesheet" href="vuelos.css" />
+  <link rel="icon" type="image/png" href="images/Logo.png">
+</head>
+<body>
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="images/Fondos.mp4" type="video/mp4" />
+      Tu navegador no soporta el video HTML5.
+    </video>
+  </div>
+
+  <div class="overlay"></div>
+
+  <header class="header">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/Logo.png" alt="Logo Grupo BDP" class="logo">
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="vuelos.html" class="nav-link">Seguimiento de Vuelos a Norteamerica</a></li>
+        <li><a href="entrada.html" class="nav-link">Registro de Entrada</a></li>
+        <li><a href="salida.html" class="nav-link">Registro de Salida</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+   <h2>Registro de Vuelo</h2>
+<form action="registrar_vuelo.php" method="POST">
+
+  <label>Fecha:
+    <input type="date" name="fecha" required>
+  </label>
+
+  <label>Vuelo:
+    <select name="vuelo" required>
+      <option disabled selected>Selecciona un vuelo</option>
+      <option>MIA - AV0006</option>
+      <option>MIA - AV0126</option>
+      <option>IAD - AV0246</option>
+      <option>MCO - AV0028</option>
+      <option>FLL - AV0036</option>
+      <option>SJU - AV0258</option>
+      <option>JFK - AV0244</option>
+      <option>MIA - AV0004</option>
+      <option>JFK - AV0210</option>
+      <option>MIA - AV0008</option>
+      <option>JFK - AV0020</option>
+      <option>BOS - AV0222</option>
+      <option>BOS - AV0228</option>
+      <option>MCO - AV0216</option>
+      <option>SJU - AV0214</option>
+      <option>BOS - AV0226</option>
+      <option>IAD - AV0148</option>
+      <option>ORD - AV0262</option>
+      <option>TPA - AV0194</option>
+      <option>DFW - AV0188</option>
+    </select>
+  </label>
+
+  <label>Nombre (Agente 1):
+    <select name="nombre" required>
+      <option disabled selected>Selecciona un nombre</option>
+      <option>Jose Gregorio Valencia Garcia</option>
+            <option>Marcela Herrera Cardona</option>
+            <option>Johan Stiven Matiz Russi</option>
+            <option>Leyla Ruth Rodriguez Pores</option>
+            <option>Jeisson Camilo Cardenas Sanchez</option>
+            <option>Sebastian Romero Laguna</option>
+            <option>Jhon Didier Lopez Cardenas</option>
+            <option>Daniela Lugo Mosquera</option>
+            <option>Luzby Julieth Cespedes Garcia</option>
+            <option>Diana Hernandez Sierra</option>
+            <option>Ariel Enrique Castellar Pava</option>
+            <option>Andres Mauricio Rojas Vargas</option>
+            <option>Brayan Daniel Porras Ramirez</option>
+            <option>Claudia Marcela Flores Aranguren</option>
+            <option>Karen Vanessa Mejia Calderon</option>
+            <option>Lesly Viviana Torres Porras</option>
+            <option>Nicolle Vanesa Molina Madrigal</option>
+            <option>Vanessa Vasquez Franco</option>
+            <option>Brenda Yulieth Garavito Moreno</option>
+            <option>Angie Natalia Ballen Galeano</option>
+            <option>José Armando García Urrea</option>
+            <option>Carlos Martinez</option>
+            <option>Janner Cortes</option>
+            <option>Leidy Bosiga</option>
+            <option>Deivis Cardenas Perez</option>
+    </select>
+  </label>
+
+  <label>Supervisor de Vuelo (Operación):
+    <input type="text" name="supervisor_operacion" required>
+  </label>
+
+  <label>Nombre de Grupo MMTD:
+    <input type="text" name="grupo_mmtd" required>
+  </label>
+
+  <label>BDP asignado al vuelo (Agente 2):
+    <select name="bdp_asignado_1" required>
+      <option disabled selected>Selecciona un BDP</option>
+<option>Jose Gregorio Valencia Garcia</option>
+            <option>Marcela Herrera Cardona</option>
+            <option>Johan Stiven Matiz Russi</option>
+            <option>Leyla Ruth Rodriguez Pores</option>
+            <option>Jeisson Camilo Cardenas Sanchez</option>
+            <option>Sebastian Romero Laguna</option>
+            <option>Jhon Didier Lopez Cardenas</option>
+            <option>Daniela Lugo Mosquera</option>
+            <option>Luzby Julieth Cespedes Garcia</option>
+            <option>Diana Hernandez Sierra</option>
+            <option>Ariel Enrique Castellar Pava</option>
+            <option>Andres Mauricio Rojas Vargas</option>
+            <option>Brayan Daniel Porras Ramirez</option>
+            <option>Claudia Marcela Flores Aranguren</option>
+            <option>Karen Vanessa Mejia Calderon</option>
+            <option>Lesly Viviana Torres Porras</option>
+            <option>Nicolle Vanesa Molina Madrigal</option>
+            <option>Vanessa Vasquez Franco</option>
+            <option>Brenda Yulieth Garavito Moreno</option>
+            <option>Carlos Martinez</option>
+            <option>Janner Cortes</option>
+            <option>Angie Natalia Ballen Galeano</option>
+            <option>José Armando García Urrea</option>
+            <option>Leidy Bosiga</option>
+            <option>Deivis Cardenas Perez</option>
+    </select>
+  </label>
+
+  <label>BDP asignado al vuelo (OPOYO):
+    <select name="bdp_asignado_2" >
+      <option disabled selected>Selecciona un BDP</option>
+<option>Jose Gregorio Valencia Garcia</option>
+            <option>Marcela Herrera Cardona</option>
+            <option>Johan Stiven Matiz Russi</option>
+            <option>Leyla Ruth Rodriguez Pores</option>
+            <option>Jeisson Camilo Cardenas Sanchez</option>
+            <option>Sebastian Romero Laguna</option>
+            <option>Jhon Didier Lopez Cardenas</option>
+            <option>Daniela Lugo Mosquera</option>
+            <option>Luzby Julieth Cespedes Garcia</option>
+            <option>Diana Hernandez Sierra</option>
+            <option>Ariel Enrique Castellar Pava</option>
+            <option>Andres Mauricio Rojas Vargas</option>
+            <option>Brayan Daniel Porras Ramirez</option>
+            <option>Claudia Marcela Flores Aranguren</option>
+            <option>Karen Vanessa Mejia Calderon</option>
+            <option>Lesly Viviana Torres Porras</option>
+            <option>Nicolle Vanesa Molina Madrigal</option>
+            <option>Vanessa Vasquez Franco</option>
+            <option>Brenda Yulieth Garavito Moreno</option>
+            <option>Carlos Martinez</option>
+            <option>Janner Cortes</option>
+            <option>Angie Natalia Ballen Galeano</option>
+            <option>José Armando García Urrea</option>
+            <option>Leidy Bosiga</option>
+            <option>Deivis Cardenas Perez</option>
+    </select>
+  </label>
+
+<label>Personal de Avianca:
+  <input type="text" name="personal_avianca" required placeholder="Nombres separados por coma">
+</label>
+
+  <label>SSSS asignados por TSA:
+    <select name="ssss_tsa" required>
+      <option disabled selected>Selecciona cantidad</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+    </select>
+  </label>
+
+  <label>SSSS asignados por BDP:
+    <select name="ssss_bdp" required>
+      <option disabled selected>Selecciona cantidad</option>
+      <option>0</option><option>1</option><option>2</option><option>3</option>
+      <option>4</option><option>5</option><option>6</option>
+      <option>7</option><option>8</option><option>9</option><option>10</option>
+    </select>
+  </label>
+
+  <label>Nombres de SSSS asignados por BDP:
+    <input type="text" name="nombres_bdp" placeholder="Nombres separados por coma" required>
+  </label>
+
+  <label>Área que tuvo la novedad:
+    <select name="area_novedad" required>
+      <option disabled selected>Selecciona una opción</option>
+      <option>AEROPUERTOS</option>
+      <option>SEGURIDAD MMTD</option>
+      <option>SEGURIDAD BDP</option>
+      <option>SUPERVISOR AEROPUERTOS</option>
+      <option>PONAL</option>
+      <option>DIAN</option>
+      <option>MIGRACION</option>
+      <option>VISE</option>
+      <option>CBP</option>
+      <option>NO APLICA</option>
+    </select>
+  </label>
+
+  <label>Argumente su respuesta:
+    <textarea name="argumento_novedad" rows="3"></textarea>
+  </label>
+
+  <label>Tiempo de demora del vuelo:
+    <textarea name="tiempo_demora" rows="3" placeholder="Escriba El Tiempo"></textarea>
+  </label>
+
+  <label>Colaboración con personal de Avianca (1 = Malo, 5 = Excelente):
+    <select name="colaboracion_av" required>
+      <option disabled selected>Seleccione una opción</option>
+      <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+    </select>
+  </label>
+
+<label>Argumente su respuesta:
+  <textarea name="argumento_colaboracion" rows="3" required></textarea>
+</label>
+
+
+  <button type="submit">Registrar Vuelo</button>
+</form>
+
+<footer style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 13px;
+  z-index: 100;
+">
+  &copy; 2025 BEHAVIOR DETECTION PROGRAM - Desarrollado por Tomas Martinez - Leyla Rodriguez
+</footer>
+
+
+  </main>
+</body>
+</html>

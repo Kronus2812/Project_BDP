@@ -1,0 +1,119 @@
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanLens - Registro de Turnos</title>
+  <link rel="stylesheet" href="salida.css" />
+  <link rel="icon" type="image/png" href="images/Logo.png">
+</head>
+<body>
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="images/Fondos.mp4" type="video/mp4" />
+      Tu navegador no soporta el video HTML5.
+    </video>
+  </div>
+
+  <div class="overlay"></div>
+
+  <header class="header">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/Logo.png" alt="Logo Grupo BDP" class="logo">
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="vuelos.html" class="nav-link">Seguimiento de Vuelos a Norteamerica</a></li>
+        <li><a href="entrada.html" class="nav-link">Registro de Entrada</a></li>
+        <li><a href="salida.html" class="nav-link">Registro de Salida</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+     <h2>Registro de Salida</h2>
+    <form action="registrar_salida.php" method="POST" enctype="multipart/form-data">
+        <label>Fecha:
+          <input type="date" name="fecha" required />
+        </label>
+
+        <label>Hora de Salida:
+          <select name="hora_salida" required>
+                  <option value="" disabled selected class="placeholder-option">Hora (Selecciona una)</option>
+            <option>6:50 </option><option>9:30 </option><option>10:00 </option><option>11:50 </option>
+            <option>12:50 </option><option>13:50 </option><option>14:50 </option><option>15:30 </option>
+            <option>15:50 </option><option>22:50 </option><option>23:50 </option>
+          </select>
+        </label>
+
+        <label>Nombre:
+          <select name="nombre" required>
+                                <option value="" disabled selected style="color: #999;">Nombre (Selecciona uno)</option>
+            <option>Jose Gregorio Valencia Garcia</option>
+            <option>Marcela Herrera Cardona</option>
+            <option>Johan Stiven Matiz Russi</option>
+            <option>Leyla Ruth Rodriguez Pores</option>
+            <option>Jeisson Camilo Cardenas Sanchez</option>
+            <option>Sebastian Romero Laguna</option>
+            <option>Jhon Didier Lopez Cardenas</option>
+            <option>Daniela Lugo Mosquera</option>
+            <option>Luzby Julieth Cespedes Garcia</option>
+            <option>Diana Hernandez Sierra</option>
+            <option>Ariel Enrique Castellar Pava</option>
+            <option>Andres Mauricio Rojas Vargas</option>
+            <option>Brayan Daniel Porras Ramirez</option>
+            <option>Claudia Marcela Flores Aranguren</option>
+            <option>Karen Vanessa Mejia Calderon</option>
+            <option>Lesly Viviana Torres Porras</option>
+            <option>Nicolle Vanesa Molina Madrigal</option>
+            <option>Vanessa Vasquez Franco</option>
+            <option>Brenda Yulieth Garavito Moreno</option>
+            <option>Carlos Martinez</option>
+            <option>Janner Cortes</option>
+            <option>Angie Natalia Ballen Galeano</option>
+            <option>José Armando García Urrea</option>
+            <option>Leidy Bosiga</option>          
+            <option>Deivis Cardenas Perez</option>
+            </select>
+        </label>
+
+        <label>¿Realizó Hora Extra?:
+          <select name="hora_extra">
+            <option value="">--Seleccionar--</option>
+            <option>1 Hora</option><option>2 Horas</option><option>3 Horas</option>
+          </select>
+        </label>
+
+        <label>Motivo (INDIQUE EN ESTE ESPACIO CUALQUIER MOTIVO DE HORA EXTRA E INCLUYA SI TUVO ALGUN PROBLEMA AL SUBIR LA FOTO COMO POR EJEMPLO INTERNET LENTO):
+          <input type="text" name="motivo_extra" placeholder="Opcional" />
+        </label>
+
+        <label>Foto de Posición al Salir:
+          <input type="file" name="foto" accept="image/*" required />
+        </label>
+
+        <button type="submit">Registrar Salida</button>
+      </form>
+      
+<footer style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 13px;
+  z-index: 100;
+">
+  &copy; 2025 BEHAVIOR DETECTION PROGRAM - Desarrollado por Tomas Martinez - Leyla Rodriguez
+</footer>
+
+
+
+  </main>
+</body>
+</html>
