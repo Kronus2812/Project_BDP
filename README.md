@@ -386,7 +386,3 @@ Stack: Frontend, Backend, Python, JavaScript, SQL, PHP, React, CSS, HTML
 Repositorio: [github.com/Kronus2812/Project_BDP](https://github.com/Kronus2812/Project_BDP)
 
 ---
-
-## Licencia
-
-MIT License - Proyecto educativo para propósitos de aprendizaje.
