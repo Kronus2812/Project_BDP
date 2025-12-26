@@ -1,7 +1,5 @@
 # Sistema BDP - Control de Acceso Aeroportuario
 
-![Sistema BDP](https://via.placeholder.com/1200x300/1e3a5f/ffffff?text=Sistema+BDP+Securitas)
-
 ## Descripción
 
 Sistema de gestión y control de acceso para personal de seguridad de Avianca en aeropuertos. Permite registrar vuelos, controlar entradas y salidas de personal, y consultar registros históricos mediante dashboards interactivos.
