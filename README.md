@@ -375,7 +375,7 @@ Este es un proyecto educativo. Si encuentras bugs o tienes sugerencias:
 - JavaScript Vanilla
 - Apache/Nginx
 
----
+----
 
 ## Desarrollador
 
