@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 $where = "1";
 $nombreFiltro = $_GET['nombre'] ?? '';
 $fechaFiltro = $_GET['fecha'] ?? '';
-$mesFiltro = $_GET['mes'] ?? null; // <- Nuevo filtro por mes
+$mesFiltro = $_GET['mes'] ?? null; 
 
 if (!empty($nombreFiltro)) {
     $where .= " AND nombre='" . $conn->real_escape_string($nombreFiltro) . "'";
